@@ -1,13 +1,17 @@
 .container-fluid {
     overflow: hide;
-    height: 90vh;
-    width: 90vw
+    height: 80vh;
+    width: 100vw
+}
+
+.col-12 {
+    padding-left: 0px;
 }
 
 .game-background {
     background-image: url('../images/room.jpg');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 80vh;
 }
@@ -20,8 +24,96 @@
     z-index: 100;
     top: 9em;
     position: absolute;
-    height: 24%;
-    width: 100%;
-
+    max-width: 280px;
+    height: 20%;
 }
 
+.egg {
+    position: absolute;
+    background-image: url('../images/egg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 18%;
+    height: 5%;
+    width: 2%;
+    z-index: 99;
+}
+
+#egg1 {
+    left: calc(20% + 8%/2 - 2%/2);
+}
+
+#egg2 {
+    left: calc(40% + 8%/2 - 2%/2);
+}
+
+#egg3 {
+    left: calc(60% + 8%/2 - 2%/2);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 7%;
+    width: 7%;
+    background: url('bullseye1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bullseye1 {
+    left: calc(20% + 8%/2 - 7%/2);
+}
+
+#bullseye2 {
+    left: calc(40% + 8%/2 - 7%/2);
+}
+
+#bullseye3 {
+    left: calc(60% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.445);
+    bottom: 0;
+    z-index: 10;
+}
+
+#basket {
+    height: 143px;
+    width: 232px;
+    position: absolute;
+    bottom: 35px;
+    background-image: url('../images/basket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#score_1 {
+    position: absolute;
+    color: #424242;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+
+/* #restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: fuchsia;
+    color: white;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+} */
