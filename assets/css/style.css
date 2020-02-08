@@ -16,14 +16,20 @@
     height: 80vh;
 }
 
+.score_help {
+    text-align: center;
+    font-size: 25px;
+    background-color: #eaeaea;
+}
+
 .hen {
+    position: absolute;
     background-image: url('../images/chick.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 100;
-    top: 9em;
-    position: absolute;
+    top: 13%;
     max-width: 280px;
     height: 20%;
 }
@@ -34,47 +40,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    top: 18%;
-    height: 5%;
-    width: 2%;
+    top: 19%;
+    height: 13%;
+    width: 12%;
+    max-width: 100px;
     z-index: 99;
 }
 
-#egg1 {
-    left: calc(20% + 8%/2 - 2%/2);
-}
 
-#egg2 {
-    left: calc(40% + 8%/2 - 2%/2);
-}
 
-#egg3 {
-    left: calc(60% + 8%/2 - 2%/2);
-}
-
-.bullseye {
-    display: none;
+.sunnysideup {
+    /* display: none; */
     position: absolute;
-    bottom: 0px;
-    height: 7%;
-    width: 7%;
-    background: url('bullseye1.png');
-    background-size: cover;
+    background-image: url('../images/sunnysideup.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 3%;
+    height: 11%;
+    max-width: 220px;
     z-index: 11;
 }
 
-#bullseye1 {
-    left: calc(20% + 8%/2 - 7%/2);
-}
-
-#bullseye2 {
-    left: calc(40% + 8%/2 - 7%/2);
-}
-
-#bullseye3 {
-    left: calc(60% + 8%/2 - 7%/2);
-}
 
 #floor {
     position: absolute;
@@ -105,7 +92,7 @@
     left: 30%;
 }
 
-/* #restart {
+#restart {
     border: 0;
     position: absolute;
     height: 10%;
@@ -116,4 +103,4 @@
     font-size: 35px;
     display: none;
     cursor: pointer;
-} */
+}
