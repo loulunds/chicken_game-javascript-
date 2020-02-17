@@ -1,19 +1,21 @@
-.container-fluid {
-    overflow: hide;
+.container-fluid{
+    overflow: hidden;
     height: 80vh;
-    width: 100vw
+    width: 100vw;
 }
 
 .col-12 {
-    padding-left: 0px;
+    padding: 0px 0px 0px 0px;
+
 }
 
 .game-background {
     background-image: url('../images/room.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 80vh;
+    max-width: 95vw;
+    overflow-x: hidden;
+    
 }
 
 .score_help {
@@ -50,7 +52,7 @@
 
 
 .sunnysideup {
-    /* display: none; */
+    display: none;
     position: absolute;
     background-image: url('../images/sunnysideup.png');
     background-repeat: no-repeat;

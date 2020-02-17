@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Chicken</title>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-8 offset-lg-2 game-background">
+<body> 
+    <div class="row ">
+    <!-- if container-fluid is not used, the game area will not expand automatically -->
+            <div class="container-fluid col-12 col-lg-8 offset-lg-2 game-background">
            
                 <div class="score_help">Score: 
-                    <span class="score">0</span>Life:
-                    <span class="life"></span> Use mouse to control
+                    <span id="score">0</span>Life:
+                    <span id="life"></span> Use mouse to control
                 </div>
 
                 <div id="hen1" class="col-4 hen"></div>
@@ -37,13 +35,24 @@
                     <span id="score_1">0</span>
                 </div>
 
-                <div id="floor"></div>    
+                <div id="floor"></div>  
 
+                  <!------  -->
+                <!-- <div id="leftwall"></div>  
+                <div id="rightwall"></div>   -->
+    
                 <div><button id="restart">Restart</button></div>
             </div>
-        </div>
-    </div>
-
+        <!-- </canvas>    -->
+     </div>
     
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/variables.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/function.js"></script>
 </body>
 </html>

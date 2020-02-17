@@ -15,6 +15,7 @@ $(function () {
 
     the_game = function () {
 
+
         if (check_egg_hits_floor(egg1) || check_egg_hits_basket(egg1)) {
             set_egg_to_initial_position(egg1);
         } else {
@@ -33,6 +34,19 @@ $(function () {
             egg_down(egg3);
         }
 
+
+//-------------------------------------------------------------------basket_game-------//
+// $(function () {
+
+//     the_game = function () {
+
+//         if (check_basket_hit_wall(basket)) {
+//             bounce_change_direcion
+//         } else 
+//             move_in_direction
+//         }
+
+
         /*if/else statement per egg. Can you this like an array? or not be cause you need to make the eggs drop all at the
         same time?*/
 
@@ -45,7 +59,7 @@ $(function () {
 
     anim_id = requestAnimationFrame(the_game);
 
-// });
+});
 
 // $(function() {
 
@@ -60,4 +74,4 @@ $(function () {
 
 //     anim_id = requestAnimationFrame(the_game);
 
-// });
+// })

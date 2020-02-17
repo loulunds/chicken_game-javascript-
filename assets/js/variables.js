@@ -1,3 +1,10 @@
+// var myGameArea = {
+//     start : function() {
+//         this.context = this.canvas.getContext("2d");
+//         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+//     }
+// }
+
 var basket = $('#basket'),
     container = $('.container-fluid'),
     hen = $('.hen'),
@@ -11,6 +18,8 @@ var basket = $('#basket'),
     score_1 = $('#score_1'),
     life_span = $('#life'),
     floor = $('#floor'),
+    // leftwall = $('#leftwall'),
+    // rightwall = $('#rightwall'),
     basket_height = basket.height(),
     container_height = container.height(),
     egg_height = eggs.height(),
@@ -26,7 +35,7 @@ var basket = $('#basket'),
     egg_current_position = 0,
     egg_top = 0,
     basket_top = container_height - basket_height,
-    bullseye_num = 0;
+    sunnysideup_num = 0;
 life_span.text(life);
 
 // let eggGroup = ['egg1','egg2','egg3'],
